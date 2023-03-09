@@ -1,12 +1,3 @@
-// const imgArray1 = [
-//     '01.webp',
-//     '02.webp',
-//     '03.webp',
-//     '04.webp',
-//     '05.webp'
-// ];
-
-
 const imgArray = [
     {
         image: 'img/01.webp',
@@ -43,8 +34,10 @@ let thumsWrapperDom = "";
 for (let i = 0; i < imgArray.length; i++ ){
     const newImgWrapper =   `<div class="img_wrapper">
     <img class="img_cover" src="${imgArray[i].image}" />
+    <div class="text_container">
     <h3> ${imgArray[i].title} </h3>
-    <p>  ${imgArray[i].title} </p>
+    <p>  ${imgArray[i].text} </p>
+    </div>
     </div>`;
     const newImgThumb = `<div class="thumbs_wrapper">
     <img class="img_thumb" src="${imgArray[i].image}" alt="" />
