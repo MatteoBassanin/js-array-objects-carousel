@@ -113,19 +113,60 @@ prevDom.addEventListener('click',
 
 
 
-    imgThumbDom.addEventListener('click',function(){
-        
-        for (let i = 0 ; i <  imgThumbDom.length; i++){
-            
-            imgWrapperDOM[activeImage].classList.remove('show');
-            imgWrapperDOM[i].classList.add("show");
-        }
-            
-            
-    
-}    
-);
 
+imgWrapperThumbDom[0].addEventListener('click',function(){
+        
+            imgWrapperDOM[activeImage].classList.remove('show');
+            imgWrapperDOM[0].classList.add("show");
+            imgWrapperThumbDom[activeImage].classList.remove('selected');
+            imgWrapperThumbDom[0].classList.add('selected');
+         
+        }    
+        );
+    
+
+imgWrapperThumbDom[1].addEventListener('click',function(){
+        
+            imgWrapperDOM[activeImage].classList.remove('show');
+            imgWrapperDOM[1].classList.add("show");
+            imgWrapperThumbDom[activeImage].classList.remove('selected');
+            imgWrapperThumbDom[1].classList.add('selected');
+         
+        }    
+        );
+        
+
+imgWrapperThumbDom[2].addEventListener('click',function(){
+        
+            imgWrapperDOM[activeImage].classList.remove('show');
+            imgWrapperDOM[2].classList.add("show");
+            imgWrapperThumbDom[activeImage].classList.remove('selected');
+            imgWrapperThumbDom[2].classList.add('selected');
+         
+        }    
+        );
+
+
+imgWrapperThumbDom[3].addEventListener('click',function(){
+        
+            imgWrapperDOM[activeImage].classList.remove('show');
+            imgWrapperDOM[3].classList.add("show");
+            imgWrapperThumbDom[activeImage].classList.remove('selected');
+            imgWrapperThumbDom[3].classList.add('selected');
+         
+        }    
+        );
+
+
+imgWrapperThumbDom[4].addEventListener('click',function(){
+        
+            imgWrapperDOM[activeImage].classList.remove('show');
+            imgWrapperDOM[4].classList.add("show");
+            imgWrapperThumbDom[activeImage].classList.remove('selected');
+            imgWrapperThumbDom[4].classList.add('selected');
+         
+        }    
+        );
 
 
 
