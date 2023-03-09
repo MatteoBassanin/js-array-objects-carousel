@@ -104,8 +104,32 @@ prevDom.addEventListener('click',
         imgWrapperDOM[activeImage].classList.add('show');
         imgWrapperThumbDom[activeImage].classList.add('selected');
         
-        // nextDom.classList.remove('hide');
+     
        
      
     }
 );
+
+
+
+
+    imgThumbDom.addEventListener('click',function(){
+        
+        for (let i = 0 ; i <  imgThumbDom.length; i++){
+            
+            imgWrapperDOM[activeImage].classList.remove('show');
+            imgWrapperDOM[i].classList.add("show");
+        }
+            
+            
+    
+}    
+);
+
+
+
+
+
+
+
+
