@@ -118,6 +118,7 @@ imgWrapperThumbDom[0].addEventListener('click',function(){
         
             imgWrapperDOM[activeImage].classList.remove('show');
             imgWrapperDOM[0].classList.add("show");
+            
             imgWrapperThumbDom[activeImage].classList.remove('selected');
             imgWrapperThumbDom[0].classList.add('selected');
          
@@ -142,6 +143,7 @@ imgWrapperThumbDom[2].addEventListener('click',function(){
             imgWrapperDOM[2].classList.add("show");
             imgWrapperThumbDom[activeImage].classList.remove('selected');
             imgWrapperThumbDom[2].classList.add('selected');
+            
          
         }    
         );
@@ -172,5 +174,17 @@ imgWrapperThumbDom[4].addEventListener('click',function(){
 
 
 
+// for (let i = 0 ; i < 5 ; i ++){
 
+//     imgWrapperThumbDom[i].addEventListener('click',function(){
+        
+      
+//         imgWrapperDOM[activeImage].classList.remove('show');
+//         imgWrapperDOM[i].classList.add("show");
+//         imgWrapperThumbDom[activeImage].classList.remove('selected');
+//         imgWrapperThumbDom[i].classList.add('selected');
+     
+//     }    
+//     );
+// }
 
