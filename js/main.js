@@ -73,14 +73,8 @@ nextDom.addEventListener('click',
             imgWrapperDOM[activeImage].classList.remove('show');
             imgWrapperThumbDom[activeImage].classList.remove('selected');
             
-            
-            if (activeImage == imgWrapperDOM.length - 1){
-                activeImage = 0;
-                
-            }else{
-                activeImage++;
-            }
-            
+            activeImage = (activeImage == imgWrapperDOM.length - 1) ? (activeImage = 0) : (activeImage + 1);
+        
             imgWrapperDOM[activeImage].classList.add('show');
             imgWrapperThumbDom[activeImage].classList.add('selected');
         
@@ -95,11 +89,7 @@ prevDom.addEventListener('click',
         imgWrapperThumbDom[activeImage].classList.remove('selected');
         imgWrapperDOM[activeImage].classList.remove('show');
         
-        if (activeImage == 0){
-            activeImage = imgWrapperDOM.length - 1;
-        }else {
-            activeImage--;
-        }
+        activeImage = (activeImage == 0) ? (imgWrapperDOM.length -1) : (activeImage - 1);
         
         imgWrapperDOM[activeImage].classList.add('show');
         imgWrapperThumbDom[activeImage].classList.add('selected');
@@ -112,69 +102,7 @@ prevDom.addEventListener('click',
 
 
 
-
-
-// imgWrapperThumbDom[0].addEventListener('click',function(){
-        
-//             imgWrapperDOM[activeImage].classList.remove('show');
-//             imgWrapperDOM[0].classList.add("show");
-            
-//             imgWrapperThumbDom[activeImage].classList.remove('selected');
-//             imgWrapperThumbDom[0].classList.add('selected');
-         
-//         }    
-//         );
-    
-
-// imgWrapperThumbDom[1].addEventListener('click',function(){
-        
-//             imgWrapperDOM[activeImage].classList.remove('show');
-//             imgWrapperDOM[1].classList.add("show");
-//             imgWrapperThumbDom[activeImage].classList.remove('selected');
-//             imgWrapperThumbDom[1].classList.add('selected');
-         
-//         }    
-//         );
-        
-
-// imgWrapperThumbDom[2].addEventListener('click',function(){
-        
-//             imgWrapperDOM[activeImage].classList.remove('show');
-//             imgWrapperDOM[2].classList.add("show");
-//             imgWrapperThumbDom[activeImage].classList.remove('selected');
-//             imgWrapperThumbDom[2].classList.add('selected');
-            
-         
-//         }    
-//         );
-
-
-// imgWrapperThumbDom[3].addEventListener('click',function(){
-        
-//             imgWrapperDOM[activeImage].classList.remove('show');
-//             imgWrapperDOM[3].classList.add("show");
-//             imgWrapperThumbDom[activeImage].classList.remove('selected');
-//             imgWrapperThumbDom[3].classList.add('selected');
-         
-//         }    
-//         );
-
-
-// imgWrapperThumbDom[4].addEventListener('click',function(){
-        
-//             imgWrapperDOM[activeImage].classList.remove('show');
-//             imgWrapperDOM[4].classList.add("show");
-//             imgWrapperThumbDom[activeImage].classList.remove('selected');
-//             imgWrapperThumbDom[4].classList.add('selected');
-         
-//         }    
-//         );
-
-
-
-
-
-for (let i = 0 ; i < 5 ; i ++){
+for (let i = 0 ; i < imgWrapperThumbDom.length ; i ++){
 
     imgWrapperThumbDom[i].addEventListener('click',function(){
         
