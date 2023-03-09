@@ -181,10 +181,10 @@ for (let i = 0 ; i < 5 ; i ++){
         
         imgWrapperDOM[activeImage].classList.remove('show');
         imgWrapperDOM[i].classList.add("show");
-        activeImage = i ;
         imgWrapperThumbDom[activeImage].classList.remove('selected');
         imgWrapperThumbDom[i].classList.add('selected');
-     
+        activeImage = i ;
+        
     }    
     );
 }
